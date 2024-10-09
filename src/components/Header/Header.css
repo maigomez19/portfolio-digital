@@ -1,0 +1,54 @@
+#headerDiv, #navbar {
+    background-color: #ef223c !important;
+}
+
+#tituloHeader {
+    font-family: "all-round-gothic", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5em;
+    color: white;
+    border-left: 3px solid #ff85a1;
+    margin: 0px !important;
+    padding: 0px !important;
+    padding-bottom: 3.5em !important;
+    padding-left: .4em !important;
+}
+
+#lineaHeader {
+    border-bottom: 3px solid #ff85a1;
+    margin: 0px;
+    padding: 0px;
+}
+
+#headerIzq {
+    border-left: 3px solid #ff85a1;
+    padding-top: 2.5em !important;
+}
+
+@media only screen and (max-width: 465px) {
+    #tituloHeader {
+        padding-left: .1em !important;
+        font-size: 1.2em;
+    }
+}
+    
+
+@media only screen and (min-width:466px) and (max-width: 600px) {
+    #tituloHeader {
+        padding-left: .2em !important;
+        font-size: 1.3em;
+    }
+}
+
+@media only screen and (min-width:601px) and (max-width: 768px) {
+    #tituloHeader {
+        padding-left: .2em !important;
+    }
+}
+
+@media only screen and (min-width:769px) and (max-width: 992px) {
+    #tituloHeader {
+        padding-left: .3em !important;
+    }
+}

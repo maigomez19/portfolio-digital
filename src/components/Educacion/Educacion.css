@@ -1,0 +1,107 @@
+.educacion {
+    background: url('./imgs-educacion/educacion.png') no-repeat, linear-gradient(to right, rgba(71, 43, 109), rgba(171, 52, 103)) no-repeat !important;
+    background-position: -10% 30px,center !important;
+    color: white;
+}
+
+.education {
+    background: url('./imgs-educacion/education.png') no-repeat, linear-gradient(to right, rgba(71, 43, 109), rgba(171, 52, 103)) no-repeat !important;
+    background-position: -10% 30px,center !important;
+    color: white;
+}
+
+#educacion h1 {
+    text-transform: uppercase;
+    font-size: 1.6em !important;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+    margin-top: 0px !important;
+    padding-bottom: .5em;
+}
+
+#educacion h1 span {
+    font-weight: 100 !important;
+}
+
+.lineaTitulo4 {
+    border-bottom: 2px solid white;
+    max-width: 50px !important;
+    margin: auto;
+    margin-bottom: 2em !important;
+}
+
+#educacion p {
+    font-size: .9em;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+#educacion .fechas {
+    font-weight: bold;
+    color: white !important;
+    max-width: 300px !important;
+    margin: auto !important; 
+    background: #cdcdcd70;
+    border-radius: 5px !important;
+    padding: 2px !important;
+}
+
+#educacion h2 {
+    font-size: 1.4em;
+}
+
+@media only screen and (max-width: 465px) {
+    .educacion {
+        background-position: 50% 0%;
+    } 
+    
+    .education {
+        background-position: 50% 0%;
+    } 
+}
+
+@media only screen and (min-width:466px) and (max-width: 600px) {
+    .educacion {
+        background-position: 20% 0%;
+    } 
+    
+    .education {
+        background-position: 20% 0%;
+    }      
+    
+}
+
+@media only screen and (min-width:601px) and (max-width: 768px) {
+    .educacion {
+        background-position: 10% 0%;
+    } 
+    
+    .education {
+        background-position: 10% 0%;
+    }     
+    
+}
+
+@media only screen and (min-width:769px) and (max-width: 899px) {
+    .educacion {
+        background-position: 10% 0%;
+    } 
+    
+    .education {
+        background-position: 10% 0%;
+    }    
+}
+
+@media only screen and (min-width:900px) {
+    .educacion {
+        background-position: 10% 0%;
+        height: 100vh !important;
+    } 
+    
+    .education {
+        background-position: 10% 0%;
+        height: 100vh !important;
+    }    
+}

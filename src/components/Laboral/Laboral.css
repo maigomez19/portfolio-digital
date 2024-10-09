@@ -1,0 +1,112 @@
+.laboralDiv {
+    overflow-y: hidden !important;
+    background-image: url('./imgs-laboral/experiencia.png');
+    background-repeat: no-repeat;
+    background-position: 120% 80%;
+}
+
+.laborDiv {
+    overflow-y: hidden !important;
+    background-image: url('./imgs-laboral/experience.png');
+    background-repeat: no-repeat;
+    background-position: 120% 80%;
+}
+
+#laboralDiv h1 {
+    text-transform: uppercase;
+    font-size: 1.6em !important;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+    margin-top: 0px !important;
+    padding-bottom: .5em;
+}
+
+#laboralDiv h1 span {
+    font-weight: 100 !important;
+}
+
+.lineaTitulo3 {
+    border-bottom: 2px solid #472b6d;
+    max-width: 50px !important;
+}
+
+#imgLaboral img {
+    width: 100% !important;
+    height: 100% !important;
+    filter: saturate(0%) !important;
+}
+
+#imgLaboral {
+    overflow-y: hidden !important;
+}
+
+#gridLaboral p {
+    font-size: .9em;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+}
+
+#gridLaboral .fechas {
+    font-weight: bold;
+    color: #818181 !important;
+}
+
+#gridLaboral h2 {
+    font-size: 1.4em;
+}
+
+.adquiridos {
+    background-color: #472b6d;
+    padding: 3px !important;
+    border-radius: 5px;
+    color: white !important;
+    font-size: .8em !important;
+    margin-bottom: .5em !important;
+}
+
+.tituloAdquiridos {
+    font-size: 1em !important;
+}
+
+@media only screen and (max-width: 465px) {
+    .lineaTitulo3 {
+        margin: auto !important;
+    }
+
+    #laboralDiv {
+        background-position: -50px 100%;
+    }    
+}
+
+@media only screen and (min-width:466px) and (max-width: 600px) {
+    .lineaTitulo3 {
+        margin: auto !important;
+    }
+
+    #laboralDiv {
+        background-position: -50px 100%;
+    }       
+    
+}
+
+@media only screen and (min-width:601px) and (max-width: 768px) {
+    .lineaTitulo3 {
+        margin: auto !important;
+    }
+
+    #laboralDiv {
+        background-position: -50px 100%;
+    }     
+    
+}
+
+@media only screen and (min-width:769px) and (max-width: 899px) {
+    .lineaTitulo3 {
+        margin: auto !important;
+    }
+
+    #laboralDiv {
+        background-position: -50px 100%;
+    }    
+}

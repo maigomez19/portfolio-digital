@@ -1,0 +1,115 @@
+#proyectos h1 {
+    text-transform: uppercase;
+    font-size: 1.6em !important;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+    margin-top: 0px !important;
+    padding-bottom: .5em;
+    text-align: center;
+    color: white;
+}
+
+#proyectos h1 span {
+    font-weight: 100 !important;
+}
+
+.lineaTituloProyectos {
+    border-bottom: 2px solid white;
+    max-width: 50px !important;
+    margin: auto !important;
+    margin-bottom: 3em !important;
+}
+
+#proyectos img {
+    max-width: 200px !important;
+}
+
+#proyectos {
+    background: linear-gradient(to top right, #fff 0%, #fff 50%, rgba(71, 43, 109) 50%, rgba(171, 52, 103) 100%);
+    /* height: 100vh; */
+}
+
+.gridProyectos {
+    background-image: url('./imgs-proyectos/proyectos.png');
+    background-repeat: no-repeat;
+    background-position: 130% 0%;
+    /* height: 100vh; */
+    overflow-y: hidden !important;
+}
+
+.gridProjects {
+    background-image: url('./imgs-proyectos/projects.png');
+    background-repeat: no-repeat;
+    background-position: 130% 0%;
+    /* height: 100vh; */
+    overflow-y: hidden !important;
+}
+
+.titleExperiencia2 {
+    text-align: center !important;
+    font-size: 1em !important;
+    margin-bottom: 1em !important;
+    margin-top: 1em !important;
+}
+
+#proyectos p {
+    font-size: .9em !important;
+    margin-bottom:  2em !important;
+    margin-top: 0px !important;
+}
+
+@media only screen and (max-width: 465px) {
+    .gridProyectos {
+        background-position: -10% 0%;
+    } 
+    
+    .gridProjects {
+        background-position: -10% 0%;
+    } 
+}
+
+@media only screen and (min-width:466px) and (max-width: 600px) {
+    .gridProyectos {
+        background-position: -10% 0%;
+    } 
+    
+    .gridProjects {
+        background-position: -10% 0%;
+    }      
+    
+}
+
+@media only screen and (min-width:601px) and (max-width: 768px) {
+    .gridProyectos {
+        background-position: -10% 0%;
+    } 
+    
+    .gridProjects {
+        background-position: -10% 0%;
+    }     
+    
+}
+
+@media only screen and (min-width:769px) and (max-width: 899px) {
+    .gridProyectos {
+        background-position: -10% 0%;
+    } 
+    
+    .gridProjects {
+        background-position: -10% 0%;
+    }   
+}
+
+@media only screen and (min-width:900px) {
+    #proyectos {
+        height: 100vh;
+    }
+    
+    .gridProyectos {
+        height: 100vh;
+    }
+    
+    .gridProjects {
+        height: 100vh;
+    }
+}

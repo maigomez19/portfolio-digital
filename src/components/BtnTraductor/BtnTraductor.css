@@ -1,0 +1,50 @@
+#btnTraductor {
+    border-radius: 100%;
+    width: 45px !important;
+    min-width: unset !important;
+    height: 45px !important;
+    background-color: white;
+    border: 1px solid #cdcdcd;
+    padding: 0px !important;
+}
+
+#btnTraductor2 {
+    border-radius: 100%;
+    width: 45px !important;
+    min-width: unset !important;
+    height: 45px !important;
+    margin-bottom: 1em !important;
+    background-color: white;
+    border: 1px solid #cdcdcd;
+    padding: 0px !important;
+}
+
+#btns {
+    margin-right: 1em !important;
+    margin-bottom: 1em !important;
+    position: fixed !important;
+    bottom: 0 !important;
+    right: 0 !important;
+}
+
+#btnTraductor img, #btnTraductor2 img {
+    border-radius: 3px;
+    width: 25px;
+    height: 15px;
+}
+
+#volverArriba {
+    color: white !important;
+    background-color: rgba(171, 52, 103);
+    border-radius: 100% !important;
+}
+
+#btnTraductor3 {
+    border-radius: 100%;
+    width: 45px !important;
+    min-width: unset !important;
+    height: 20px !important;
+    margin-bottom: 1em !important;
+    background-color: transparent !important;
+    padding: 0px !important;
+}
