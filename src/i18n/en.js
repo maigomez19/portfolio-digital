@@ -62,5 +62,9 @@ export const eng = {
     Ingles_avanzado: 'Advanced English',
     Mayo: 'May',
     Curso_Python: 'Python course in Django Framework.',
-    Bienvenidos: 'Welcome'
+    Bienvenidos: 'Welcome',
+    Informática: 'Computing',
+    edu: 'Education',
+    exp: 'Experience',
+    pro: 'Projects',
 }

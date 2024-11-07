@@ -10,13 +10,13 @@ import './Educacion.css';
 import i18n from './../../i18n';
 
 // FRAMER
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function Educacion() {
     const ref = useRef(null);
-    const isInView = useInView(ref, {
-        amount: "all",
-    });
+    // const isInView = useInView(ref, {
+    //     amount: "all",
+    // });
 
   return (
     <>

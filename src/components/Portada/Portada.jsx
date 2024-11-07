@@ -12,31 +12,33 @@ import './Portada.css';
 import i18n from './../../i18n';
 
 // FRAMER
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function Portada() {
     const ref = useRef(null);
-    const isInView = useInView(ref, {
-        amount: "all",
-    });
+    // const isInView = useInView(ref, {
+    //     amount: "all",
+    // });
 
     return (
         <div id="portada" ref={ref}>
             <div id="inicio"></div>
 
             <Container>
-                <Grid container display="flex" flexDirection="row" justifyContent={{xs: "center", sm: "space-between"}} pt={2} pb={2}>
-                    <Grid className="ubicacion" display={{xs: "none", sm: "block"}}>
+                <Grid container display="flex" flexDirection="row" justifyContent="space-between" pt={2} pb={2} alignItems="center">
+                    <Grid className="ubicacion">
                         <p>Mailen Gomez</p>
                     </Grid>
 
-                    <Grid className="ubicacion" display="flex" flexDirection="row" alignItems="center">
-                        <Stack direction="row" alignItems="center">
+                    <Grid>
+                        <Menu/>
+                    </Grid>
+
+                    <Grid className="ubicacion" display={{xs:"none", md:"block"}}>
+                        <Stack direction="row" alignItems="center" marginLeft={1}>
                             <PlaceIcon/>
                             <p>Buenos Aires, Argentina</p>
                         </Stack>
-
-                        <Menu/>
                     </Grid>
                 </Grid>
 

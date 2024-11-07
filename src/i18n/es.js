@@ -62,5 +62,9 @@ export const esp = {
     Ingles_avanzado: 'Inglés avanzado',
     Mayo: 'Mayo',
     Curso_Python: 'Curso de Python en Django Framework.',
-    Bienvenidos: 'Bienvenidos'
+    Bienvenidos: 'Bienvenidos',
+    Informática: 'Informática',
+    edu: 'Educación',
+    exp: 'Experiencia',
+    pro: 'Proyectos',
 }
