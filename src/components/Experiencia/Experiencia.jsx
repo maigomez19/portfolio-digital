@@ -9,6 +9,7 @@ import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
 import Backdrop from '@mui/material/Backdrop';
 import Fade from '@mui/material/Fade';
+import { useRef } from "react";
 
 // ICONS
 import CloseIcon from '@mui/icons-material/Close';
@@ -21,6 +22,9 @@ import './Experiencia.css';
 
 // TRADUCTOR
 import i18n from './../../i18n';
+
+// FRAMER
+import { motion, useInView } from "framer-motion";
 
 // ESTILOS MODAL
 const style = {
@@ -54,59 +58,105 @@ export default function Experiencia() {
     const handleOpen3 = () => setOpen3(true);
     const handleClose3 = () => setOpen3(false);
 
+    // FRAMER
+    const ref = useRef(null);
+    const isInView = useInView(ref, {
+        amount: "all",
+    });
+
     return (
         <>
             <div id="conocimientosTitulo"></div>
 
-            <Grid id="gridExperiencia" className={i18n.t('gridExperiencia')} display="flex" flexDirection="column" justifyContent="center" alignContent="center" flexWrap="wrap">
+            <Grid ref={ref} id="gridExperiencia" className={i18n.t('gridExperiencia')} display="flex" flexDirection="column" justifyContent="center" alignContent="center" flexWrap="wrap">
                 <Container>
-                    <Grid pt={{xs: 5, sm: 5, md: 0}}>
-                        <h1><span>{i18n.t('Conocimientos')}</span> {i18n.t('informáticos')}</h1>
-                    </Grid>
+                    <motion.div
+                        initial={{opacity:0, x:75}}
+                        whileInView={{opacity:1, x:0}}
+                        viewport={{
+                            margin:"-200px",
+                            once:true,
+                        }}
+                        transition={{duration:0.5, delay:0.25}}
+                    >
+                        <Grid pt={{xs: 5, sm: 5, md: 0}}>
+                            <h1><span>{i18n.t('Conocimientos')}</span> {i18n.t('informáticos')}</h1>
+                        </Grid>
 
-                    <div className='lineaTitulo2'></div>
+                        <div className='lineaTitulo2'></div>
+                    </motion.div>
 
                     <Grid container display="flex" flexDirection={{xs: "column", sm: "row"}} justifyContent="center" columnGap={{sm: 3}} pb={{xs: 5, sm: 5, md: 0}}>
                         <Grid item xs={12} sm={5.5} md={3.5}>
-                            <Card className='cardExperiencia' style={{marginBottom: 2 + 'em'}}>
-                                <CardContent className='cardContent'>
-                                    <IntegrationInstructionsTwoToneIcon p={0} m={0} className='iconConocimientos'/>
+                            <motion.div
+                                initial={{opacity:0, x:75}}
+                                whileInView={{opacity:1, x:0}}
+                                viewport={{
+                                    margin:"-200px",
+                                    once:true,
+                                }}
+                                transition={{duration:0.5, delay:0.25}}
+                            >
+                                <Card className='cardExperiencia' style={{marginBottom: 2 + 'em'}}>
+                                    <CardContent className='cardContent'>
+                                        <IntegrationInstructionsTwoToneIcon p={0} m={0} className='iconConocimientos'/>
 
-                                    <h2 className='titleExperiencia'>{i18n.t('Lenguajes_de')} {i18n.t('programación')}</h2>
-                                </CardContent>
+                                        <h2 className='titleExperiencia'>{i18n.t('Lenguajes_de')} {i18n.t('programación')}</h2>
+                                    </CardContent>
 
-                                <CardActionArea>
-                                    <Button onClick={handleOpen} className='verMas'>{i18n.t('ver_más')}</Button>
-                                </CardActionArea>
-                            </Card>
+                                    <CardActionArea>
+                                        <Button onClick={handleOpen} className='verMas'>{i18n.t('ver_más')}</Button>
+                                    </CardActionArea>
+                                </Card>
+                            </motion.div>
                         </Grid>
 
                         <Grid item xs={12} sm={5.5} md={3.5}>
-                            <Card className='cardExperiencia' style={{marginBottom: 2 + 'em'}}>
-                                <CardContent className='cardContent'>
-                                    <FilterDramaTwoToneIcon p={0} m={0} className='iconConocimientos'/>
+                            <motion.div
+                                initial={{opacity:0, x:75}}
+                                whileInView={{opacity:1, x:0}}
+                                viewport={{
+                                    margin:"-200px",
+                                    once:true,
+                                }}
+                                transition={{duration:0.5, delay:0.25}}
+                            >
+                                <Card className='cardExperiencia' style={{marginBottom: 2 + 'em'}}>
+                                    <CardContent className='cardContent'>
+                                        <FilterDramaTwoToneIcon p={0} m={0} className='iconConocimientos'/>
 
-                                    <h2 className='titleExperiencia'>{i18n.t('Programas_de')} {i18n.t('Adobe')}</h2>
-                                </CardContent>
+                                        <h2 className='titleExperiencia'>{i18n.t('Programas_de')} {i18n.t('Adobe')}</h2>
+                                    </CardContent>
 
-                                <CardActionArea>
-                                    <Button onClick={handleOpen2} className='verMas'>{i18n.t('ver_más')}</Button>
-                                </CardActionArea>
-                            </Card>
+                                    <CardActionArea>
+                                        <Button onClick={handleOpen2} className='verMas'>{i18n.t('ver_más')}</Button>
+                                    </CardActionArea>
+                                </Card>
+                            </motion.div>
                         </Grid>
 
                         <Grid item xs={12} sm={5.5} md={3.5}>
-                            <Card className='cardExperiencia'>
-                                <CardContent className='cardContent'>
-                                    <DonutSmallTwoToneIcon p={0} m={0} className='iconConocimientos'/>
+                            <motion.div
+                                initial={{opacity:0, x:75}}
+                                whileInView={{opacity:1, x:0}}
+                                viewport={{
+                                    margin:"-200px",
+                                    once:true,
+                                }}
+                                transition={{duration:0.5, delay:0.25}}
+                            >
+                                <Card className='cardExperiencia'>
+                                    <CardContent className='cardContent'>
+                                        <DonutSmallTwoToneIcon p={0} m={0} className='iconConocimientos'/>
 
-                                    <h2 className='titleExperiencia'>{i18n.t('Programas_de2')} {i18n.t('Office')}</h2>
-                                </CardContent>
+                                        <h2 className='titleExperiencia'>{i18n.t('Programas_de2')} {i18n.t('Office')}</h2>
+                                    </CardContent>
 
-                                <CardActionArea>
-                                    <Button onClick={handleOpen3} className='verMas'>{i18n.t('ver_más')}</Button>
-                                </CardActionArea>
-                            </Card>
+                                    <CardActionArea>
+                                        <Button onClick={handleOpen3} className='verMas'>{i18n.t('ver_más')}</Button>
+                                    </CardActionArea>
+                                </Card>
+                            </motion.div>
                         </Grid>
                     </Grid>
 
