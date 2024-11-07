@@ -9,24 +9,32 @@
     color: white;
     position: relative;
     text-decoration: none;
+    padding-bottom: .5em;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-items a:hover {
+    border-bottom: 2px solid white;
+    transition: 0.3s ease all;
 }
 
 .nav-toggle {
     display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .nav-items {
         position: absolute;
-        top: 60px;
+        top: 0;
         left: 0;
-        background: red;
+        background: rgba(71, 43, 109);
         display: flex;
         flex-direction: column;
-        width: 100%;
-        height: -webkit-fill-available;
+        width: 40%;
+        height: 100%;
         transform: translateX(-100%);
         transition: 0.3s ease all;
+        z-index: 10000000000;
     }
 
     .nav-items.open {
@@ -36,7 +44,6 @@
     .nav-toggle {
         display: flex !important;
         flex-direction: column;
-        margin: 15px;
     }
 
     .nav-toggle span {

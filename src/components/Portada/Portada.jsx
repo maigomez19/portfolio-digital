@@ -34,7 +34,7 @@ export default function Portada() {
                         <Menu/>
                     </Grid>
 
-                    <Grid className="ubicacion" display={{xs:"none", md:"block"}}>
+                    <Grid className="ubicacion" display={{xs:"none", lg:"block"}}>
                         <Stack direction="row" alignItems="center" marginLeft={1}>
                             <PlaceIcon/>
                             <p>Buenos Aires, Argentina</p>
