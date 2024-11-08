@@ -3,6 +3,7 @@ import Button from '@mui/material/Button';
 import banderaEsp from "./imgsTraductor/español.png";
 import banderaIng from "./imgsTraductor/ingles.png";
 import Box from '@mui/material/Box';
+import { useState, useEffect } from 'react';
 
 // ICONS
 import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
@@ -11,9 +12,29 @@ import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
 import './BtnTraductor.css';
 
 export default function BtnTraductor() {
+    const [scrollActivo, setScrollActivo] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = (event) => {
+            setScrollActivo(true);
+
+            if(window.pageYOffset == 0) {
+                setScrollActivo(false);
+            }
+        };
+
+
+        window.addEventListener('scroll', handleScroll);
+
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
         <Box display="flex" flexDirection="column" id="btns">
-            <Button id="btnTraductor3" p={0} href='#inicio'>
+            <Button id="btnTraductor3" p={0} href='#inicio' className={`volverArriba ${scrollActivo && "activo"}`}>
                 <ArrowCircleUpIcon id="volverArriba"/>
             </Button>
 

@@ -13,7 +13,7 @@
     width: 45px !important;
     min-width: unset !important;
     height: 45px !important;
-    margin-bottom: 1em !important;
+    margin-bottom: .8em !important;
     background-color: white;
     border: 1px solid #cdcdcd;
     padding: 0px !important;
@@ -34,9 +34,20 @@
 }
 
 #volverArriba {
-    color: white !important;
-    background-color: rgba(171, 52, 103);
+    color: rgb(90, 90, 90) !important;
+    background-color: white;
     border-radius: 100% !important;
+    font-size: 1.8em;
+    border: 1px solid #cdcdcd;
+}
+
+.volverArriba {
+    opacity: 0 !important;
+    transition: 0.2s ease all !important;
+}
+
+.volverArriba.activo {
+    opacity:  1 !important;
 }
 
 #btnTraductor3 {
@@ -44,7 +55,7 @@
     width: 45px !important;
     min-width: unset !important;
     height: 20px !important;
-    margin-bottom: 1em !important;
+    margin-bottom: .8em !important;
     background-color: transparent !important;
     padding: 0px !important;
 }

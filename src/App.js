@@ -10,25 +10,25 @@ import Proyectos from './components/Proyectos/Proyectos.jsx';
 import BtnTraductor from './components/BtnTraductor/BtnTraductor.jsx';
 
 function App() {
-  return (
-    <>
-      <Portada/>
+    return (
+        <>
+            <Portada/>
 
-      <Bienvenido/>
+            <Bienvenido/>
 
-      <Experiencia/>
+            <Experiencia/>
 
-      <Laboral/>
-      
-      <Educacion/>
+            <Laboral/>
+            
+            <Educacion/>
 
-      <Proyectos/>
+            <Proyectos/>
 
-      <BtnTraductor/>
+            <BtnTraductor/>
 
-      <Footer/>
-    </>
-  );
+            <Footer/>
+        </>
+    );
 }
 
 export default App;

@@ -1,3 +1,5 @@
+import { Menu } from "@mui/material";
+
 export const esp = {
     // ROUTER
     Portfolio: 'Portfolio',
@@ -67,4 +69,6 @@ export const esp = {
     edu: 'Educación',
     exp: 'Experiencia',
     pro: 'Proyectos',
+    Menu: 'Menú',
+    ver_codigo: 'ver código',
 }

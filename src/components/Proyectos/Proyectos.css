@@ -58,6 +58,15 @@
     margin-top: 0px !important;
 }
 
+.verMas-git {
+    margin-bottom: .5em !important;
+    background: rgba(171, 52, 103) !important;
+}
+
+.verMas-git:hover {
+    background: rgb(194, 60, 118) !important;
+}
+
 @media only screen and (max-width: 465px) {
     .gridProyectos {
         background-position: -10% 0%;

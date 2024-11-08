@@ -54,7 +54,7 @@ export default function Proyectos() {
                                 }}
                                 transition={{duration:0.5, delay:0.25}}
                             >
-                                <Card className='cardExperiencia' style={{marginBottom: 2 + 'em', height: 250 + 'px', display:'flex', justifyContent:'center', flexDirection: 'column', flexWrap: 'wrap', alignContent: 'center'}}>
+                                <Card className='cardExperiencia' style={{marginBottom: 2 + 'em', height: 300 + 'px', display:'flex', justifyContent:'center', flexDirection: 'column', flexWrap: 'wrap', alignContent: 'center'}}>
                                     <CardContent className='cardContent'>
                                         <img src={require("./imgs-proyectos/rym.png")} alt="web rick and morty" />
 
@@ -63,6 +63,8 @@ export default function Proyectos() {
                                         <p>{i18n.t('Descubre_todos_los_personajes_de_la_serie_y_disfruta_sus_aventuras_intergalácticas')}.</p>
                                         
                                         <CardActionArea>
+                                            <Button href="https://github.com/maigomez19/rick-and-morty-madness.git" target="_blank" className='verMas verMas-git'>{i18n.t('ver_codigo')}</Button>
+
                                             <Button href="https://rickandmortymadness.vercel.app/" target="_blank" className='verMas'>{i18n.t('visitar_sitio')}</Button>
                                         </CardActionArea>
                                     </CardContent>
@@ -81,7 +83,7 @@ export default function Proyectos() {
                                 }}
                                 transition={{duration:0.5, delay:0.25}}
                             >
-                                <Card className='cardExperiencia' style={{marginBottom: 2 + 'em', height: 250 + 'px', display:'flex', justifyContent:'center', flexDirection: 'column', flexWrap: 'wrap', alignContent: 'center'}}>
+                                <Card className='cardExperiencia' style={{marginBottom: 2 + 'em', height: 300 + 'px', display:'flex', justifyContent:'center', flexDirection: 'column', flexWrap: 'wrap', alignContent: 'center'}}>
                                     <CardContent className='cardContent'>
                                         <img src={require("./imgs-proyectos/sky.png")} alt="web sky above" />
 
@@ -90,6 +92,8 @@ export default function Proyectos() {
                                         <p>{i18n.t('Obtén_información_instantánea_sobre_el_clima_de_cualquier_ciudad_del_mundo')}.</p>
 
                                         <CardActionArea>
+                                            <Button href="https://github.com/maigomez19/sky-above.git" target="_blank" className='verMas verMas-git'>{i18n.t('ver_codigo')}</Button>
+
                                             <Button href="https://skyabove.vercel.app/" target="_blank" className='verMas'>{i18n.t('visitar_sitio')}</Button>
                                         </CardActionArea>
                                     </CardContent>

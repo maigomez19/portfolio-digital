@@ -15,10 +15,10 @@
 
 .nav-items a:hover {
     border-bottom: 2px solid white;
-    transition: 0.3s ease all;
+    transition: 0.25s ease all;
 }
 
-.nav-toggle {
+.nav-toggle, .nav-title {
     display: none;
 }
 
@@ -30,7 +30,7 @@
         background: rgba(71, 43, 109);
         display: flex;
         flex-direction: column;
-        width: 40%;
+        width: 45%;
         height: 100%;
         transform: translateX(-100%);
         transition: 0.3s ease all;
@@ -41,9 +41,31 @@
         transform: translateX(0) !important;
     }
 
-    .nav-toggle {
+    .nav-items.open a {
+        background: rgb(255, 255, 255, 0.2);
+        padding: .5em;
+        border-radius: 5px;
+        border: 2px solid transparent !important;
+    }
+
+    .nav-items.open a:hover {
+        border: 2px solid white !important;
+        transition: 0.25s ease all !important;
+    }
+
+    .nav-toggle, .nav-title {
         display: flex !important;
         flex-direction: column;
+    }
+
+    .nav-title {
+        font-family: "all-round-gothic", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.5em;
+        color: white;
+        margin-bottom: 0px;
+        margin-left: 15px;
     }
 
     .nav-toggle span {

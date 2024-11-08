@@ -67,4 +67,6 @@ export const eng = {
     edu: 'Education',
     exp: 'Experience',
     pro: 'Projects',
+    Menu: 'Menu',
+    ver_codigo: 'view code',
 }
