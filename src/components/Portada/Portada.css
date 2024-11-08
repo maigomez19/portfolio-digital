@@ -14,11 +14,22 @@
     height: 100vh !important;
 }
 
-.ubicacion {
+.ubicacion, .ubicacion a {
     font-family: "all-round-gothic", sans-serif;
     font-weight: 700;
     font-style: normal;
     color: white;
+    text-decoration: none;
+}
+
+.ubicacion a {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.icono-portada {
+    width: 100% !important;
 }
 
 #tituloPortada {

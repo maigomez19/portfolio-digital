@@ -30,7 +30,7 @@
         background: rgba(71, 43, 109);
         display: flex;
         flex-direction: column;
-        width: 45%;
+        width: 50%;
         height: 100%;
         transform: translateX(-100%);
         transition: 0.3s ease all;

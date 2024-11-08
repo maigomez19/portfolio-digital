@@ -14,6 +14,11 @@ import i18n from './../../i18n';
 // FRAMER
 import { motion } from "framer-motion";
 
+// ICONS
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import EmailIcon from '@mui/icons-material/Email';
+
 export default function Portada() {
     const ref = useRef(null);
     // const isInView = useInView(ref, {
@@ -36,8 +41,11 @@ export default function Portada() {
 
                     <Grid className="ubicacion" display={{xs:"none", lg:"block"}}>
                         <Stack direction="row" alignItems="center" marginLeft={1}>
-                            <PlaceIcon/>
-                            <p>Buenos Aires, Argentina</p>
+                            <a href="mailto:maichu19.mg@gmail.com"><EmailIcon className="icono-portada"/></a>
+
+                            <a href="https://www.linkedin.com/in/mailen-gomez19/" target="_blank"><LinkedInIcon className="icono-portada"/></a>
+
+                            <a href="https://github.com/maigomez19" target="_blank"><GitHubIcon className="icono-portada"/></a>
                         </Stack>
                     </Grid>
                 </Grid>

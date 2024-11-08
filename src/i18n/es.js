@@ -42,7 +42,7 @@ export const esp = {
     Programas_de2: 'Programas de',
     Office: 'Office',
     ver_más: 'ver más',
-    Contacto: 'Contacto',
+    Contacto: '¿Estás interesado en contactarme?',
     Todos_los_derechos_reservados: 'Todos los derechos reservados',
     laboralDiv: 'laboralDiv',
     gridExperiencia: 'gridExperiencia',

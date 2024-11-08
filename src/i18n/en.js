@@ -40,7 +40,7 @@ export const eng = {
     Programas_de2: 'Office',
     Office: 'applications',
     ver_más: 'view more',
-    Contacto: 'Contact',
+    Contacto: 'Are you interested in contacting me?',
     Todos_los_derechos_reservados: 'All rights reserved',
     laboralDiv: 'laborDiv',
     gridExperiencia: 'gridExperience',
