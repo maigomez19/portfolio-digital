@@ -20,11 +20,13 @@
 }
 
 #btns {
-    margin-right: 1em !important;
-    margin-bottom: 1em !important;
+    margin-right: 20px !important;
     position: fixed !important;
     bottom: 0 !important;
     right: 0 !important;
+    margin-bottom: 20px !important;
+    max-width: 100% !important;
+    z-index: 99999 !important;
 }
 
 #btnTraductor img, #btnTraductor2 img {
@@ -43,7 +45,7 @@
 
 .volverArriba {
     opacity: 0 !important;
-    transition: 0.2s ease all !important;
+    transition: 0.25s ease all !important;
 }
 
 .volverArriba.activo {

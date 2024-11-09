@@ -22,6 +22,10 @@
     display: none;
 }
 
+.contacto-iconos-menu {
+    display: none;
+}
+
 @media (max-width: 992px) {
     .nav-items {
         position: absolute;
@@ -30,7 +34,7 @@
         background: rgba(71, 43, 109);
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 60%;
         height: 100%;
         transform: translateX(-100%);
         transition: 0.3s ease all;
@@ -46,6 +50,11 @@
         padding: .5em;
         border-radius: 5px;
         border: 2px solid transparent !important;
+    }
+
+    .icono-menu {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
     }
 
     .nav-items.open a:hover {
@@ -68,6 +77,10 @@
         margin-left: 15px;
     }
 
+    .contacto-menu {
+        margin-left: 15px !important;
+    }
+
     .nav-toggle span {
         width: 30px;
         height: 4px;
@@ -88,5 +101,9 @@
 
     .nav-toggle.open > span:nth-child(3) {
         transform: rotate(-45deg) translate(-5px, 1px);
+    }
+
+    .contacto-iconos-menu {
+        display: block !important;
     }
 }

@@ -33,7 +33,7 @@ export default function BtnTraductor() {
     }, []);
 
     return (
-        <Box display="flex" flexDirection="column" id="btns">
+        <Box display="flex" flexDirection="column" justifyContent="right" id="btns">
             <Button id="btnTraductor3" p={0} href='#inicio' className={`volverArriba ${scrollActivo && "activo"}`}>
                 <ArrowCircleUpIcon id="volverArriba"/>
             </Button>

@@ -19,6 +19,9 @@ import i18n from './../../i18n';
 // FRAMER
 import { motion } from "framer-motion";
 
+// ICONS
+import PlaceIcon from '@mui/icons-material/Place';
+
 export default function Bienvenido() {
     const ref = useRef(null);
     // const isInView = useInView(ref, {
@@ -47,6 +50,22 @@ export default function Bienvenido() {
                             <div className='lineaTitulo'></div>
                         </motion.div>
 
+                        <motion.div 
+                            className="ubicacion-bienvenidos"
+                            initial={{opacity:0, x:75}}
+                            whileInView={{opacity:1, x:0}}
+                            viewport={{
+                                margin:"-200px",
+                                once:true,
+                            }}
+                            transition={{duration:0.5, delay:0.25}}
+                        >
+                            <Stack direction="row" alignItems="center" justifyContent={{xs: "center", sm: "center", md: "left"}}>
+                                <PlaceIcon/>
+                                <p>Buenos Aires, Argentina</p>
+                            </Stack>
+                        </motion.div>
+
                         <motion.div
                             initial={{opacity:0, x:75}}
                             whileInView={{opacity:1, x:0}}
@@ -70,7 +89,7 @@ export default function Bienvenido() {
                         transition={{duration:0.5, delay:0.25}}
                     >
                     <Grid display="flex" flexDirection="row" columnGap={2} id="habilidadesGrid" justifyContent={{xs: "center", md: "flex-start"}} alignContent={{xs: "center", md: "flex-start"}} flexWrap="wrap">
-                        <Grid className='boxHabilidades'>
+                        <Grid className='boxHabilidades habilidadesMargin'>
                             <h2>{i18n.t('Habilidades')}</h2>
                             
                                 <ul className="bienvenidoList">
@@ -96,7 +115,7 @@ export default function Bienvenido() {
                                 </ul>
                         </Grid>
 
-                        <Grid className='boxHabilidades'>
+                        <Grid className='boxHabilidades idiomasBox'>
                             <h2>{i18n.t('Idiomas')}</h2>
 
                             <ul className="bienvenidoList">

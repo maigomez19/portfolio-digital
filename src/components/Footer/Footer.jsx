@@ -18,7 +18,7 @@ export default function Footer() {
           <Container>
               <Grid display="flex" container flexDirection={{xs: "column", sm: "row", md: "row"}} justifyContent={{xs: "center", sm: "space-between", md: "space-between"}} pt={2} alignItems="center">
                 <Grid textAlign={{xs: "center", sm: "left", md: "left"}}>
-                    <p><b>{i18n.t('Contacto')}</b></p>
+                    <p className="contacto-menu"><b>{i18n.t('Contacto')}</b></p>
 
                     <a href="mailto:maichu19.mg@gmail.com"><EmailIcon className="icono-contacto"/></a>
                     <a href="https://www.linkedin.com/in/mailen-gomez19/" target="_blank"><LinkedInIcon className="icono-contacto"/></a>

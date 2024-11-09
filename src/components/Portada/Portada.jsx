@@ -1,7 +1,6 @@
 // REACT
 import * as React from 'react';
 import { Grid, Container, Stack } from '@mui/material';
-import PlaceIcon from '@mui/icons-material/Place';
 import Menu from '../Menu/Menu';
 import { useRef } from "react";
 
