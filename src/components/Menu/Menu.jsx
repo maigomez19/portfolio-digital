@@ -11,6 +11,7 @@ import i18n from './../../i18n';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
+import CloseIcon from '@mui/icons-material/Close';
 
 const Menu = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +20,13 @@ const Menu = () => {
         <div className="navbar">
 
             <div className={`nav-items ${isOpen && "open"}`}>
-                <p className={`nav-title ${isOpen && "open"}`}>{i18n.t('Menu')}</p>
+                <Grid display="flex" flexDirection="row" alignItems="center" justifyContent="space-between" marginTop={3}>
+                    <p className={`nav-title ${isOpen && "open"}`}>{i18n.t('Menu')}</p>
+
+                    <div className={`btn-nav ${isOpen && "open"}`} onClick={() => setIsOpen(!isOpen)}>
+                        <CloseIcon/>
+                    </div>
+                </Grid>
 
                 <a href="#bienvenidosTitulo" onClick={() => setIsOpen(!isOpen)}>{i18n.t('Bienvenidos')}</a>
                 <a href="#conocimientosTitulo" onClick={() => setIsOpen(!isOpen)}>{i18n.t('Informática')}</a>
