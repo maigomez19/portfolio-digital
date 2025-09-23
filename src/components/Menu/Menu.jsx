@@ -18,9 +18,8 @@ const Menu = () => {
 
     return(
         <div className="navbar">
-
             <div className={`nav-items ${isOpen && "open"}`}>
-                <Grid display="flex" flexDirection="row" alignItems="center" justifyContent="space-between" marginTop={3}>
+                <Grid className="titulo-btn-menu">
                     <p className={`nav-title ${isOpen && "open"}`}>{i18n.t('Menu')}</p>
 
                     <div className={`btn-nav ${isOpen && "open"}`} onClick={() => setIsOpen(!isOpen)}>
@@ -28,16 +27,32 @@ const Menu = () => {
                     </div>
                 </Grid>
 
-                <a href="#bienvenidosTitulo" onClick={() => setIsOpen(!isOpen)}>{i18n.t('Bienvenidos')}</a>
-                <a href="#conocimientosTitulo" onClick={() => setIsOpen(!isOpen)}>{i18n.t('Informática')}</a>
-                <a href="#experienciaTitulo" onClick={() => setIsOpen(!isOpen)}>{i18n.t('exp')}</a>
-                <a href="#educacionTitulo" onClick={() => setIsOpen(!isOpen)}>{i18n.t('edu')}</a>
-                <a href="#proyectosTitulo" onClick={() => setIsOpen(!isOpen)}>{i18n.t('pro')}</a>
+                <ul>
+                    <li>
+                        <a href="#bienvenidosTitulo" onClick={() => setIsOpen(!isOpen)}>{i18n.t('Bienvenidos')}</a>
+                    </li>
+
+                    <li>
+                        <a href="#conocimientosTitulo" onClick={() => setIsOpen(!isOpen)}>{i18n.t('Informática')}</a>
+                    </li>
+
+                    <li>
+                        <a href="#experienciaTitulo" onClick={() => setIsOpen(!isOpen)}>{i18n.t('exp')}</a>
+                    </li>
+
+                    <li>
+                        <a href="#educacionTitulo" onClick={() => setIsOpen(!isOpen)}>{i18n.t('edu')}</a>
+                    </li>
+
+                    <li>
+                        <a href="#proyectosTitulo" onClick={() => setIsOpen(!isOpen)}>{i18n.t('pro')}</a>
+                    </li>
+                </ul>
 
                 <Grid className="ubicacion contacto-iconos-menu">
                     <p className="contacto-menu"><b>{i18n.t('Contacto')}</b></p>
 
-                    <Stack direction="row" alignItems="center" marginLeft={1}>
+                    <Stack display="flex" flexDirection="row" alignitems="center">
                         <a className="icono-menu" href="mailto:maichu19.mg@gmail.com"><EmailIcon className="icono-portada"/></a>
 
                         <a className="icono-menu" href="https://www.linkedin.com/in/mailen-gomez19/" target="_blank"><LinkedInIcon className="icono-portada"/></a>
