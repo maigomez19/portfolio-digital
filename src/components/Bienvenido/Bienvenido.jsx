@@ -75,7 +75,7 @@ export default function Bienvenido() {
                             }}
                             transition={{duration:0.5, delay:0.25}}
                         >
-                            <p id="meConsidero">{i18n.t('Me_considero_una_persona_profundamente_comprometida_con_la_excelencia_en_todo_lo_que_hago_Creo_firmemente_que_la_Graduada_en_Diseño_y_Desarrollo_Web_me_apasiona_la_tecnología_y_crear_soluciones_innovadoras_para_simplificar_las_tareas_diarias_Busco_oportunidades_para_aprender_de_manera_continua_y_constante')}</p>
+                            <p id="meConsidero">{i18n.t('Presentacion_bienvenidos')}</p>
                         </motion.div>
                     </Grid>
 

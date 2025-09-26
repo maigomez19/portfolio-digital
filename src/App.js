@@ -18,7 +18,7 @@ function App() {
 
             <Experiencia/>
 
-            <Laboral/>
+            {/* <Laboral/> */}
             
             <Educacion/>
 

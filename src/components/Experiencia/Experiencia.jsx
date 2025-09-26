@@ -13,9 +13,10 @@ import { useRef } from "react";
 
 // ICONS
 import CloseIcon from '@mui/icons-material/Close';
-import IntegrationInstructionsTwoToneIcon from '@mui/icons-material/IntegrationInstructionsTwoTone';
-import FilterDramaTwoToneIcon from '@mui/icons-material/FilterDramaTwoTone';
-import DonutSmallTwoToneIcon from '@mui/icons-material/DonutSmallTwoTone';
+import CodeIcon from '@mui/icons-material/Code';
+import FilterDramaIcon from '@mui/icons-material/FilterDrama';
+import PlaylistAddIcon from '@mui/icons-material/PlaylistAdd';
+import TerminalIcon from '@mui/icons-material/Terminal';
 
 // CSS
 import './Experiencia.css';
@@ -58,6 +59,10 @@ export default function Experiencia() {
     const handleOpen3 = () => setOpen3(true);
     const handleClose3 = () => setOpen3(false);
 
+    const [open4, setOpen4] = React.useState(false);
+    const handleOpen4 = () => setOpen4(true);
+    const handleClose4 = () => setOpen4(false);
+
     // FRAMER
     const ref = useRef(null);
     // const isInView = useInView(ref, {
@@ -87,7 +92,7 @@ export default function Experiencia() {
                     </motion.div>
 
                     <Grid container display="flex" flexDirection={{xs: "column", sm: "row"}} justifyContent="center" columnGap={{sm: 3}} pb={{xs: 5, sm: 5, md: 0}}>
-                        <Grid item xs={12} sm={5.5} md={3.5}>
+                        <Grid item xs={12} sm={5.5} md={2.5}>
                             <motion.div
                                 initial={{opacity:0, x:75}}
                                 whileInView={{opacity:1, x:0}}
@@ -99,9 +104,9 @@ export default function Experiencia() {
                             >
                                 <Card className='cardExperiencia' style={{marginBottom: 2 + 'em'}}>
                                     <CardContent className='cardContent'>
-                                        <IntegrationInstructionsTwoToneIcon p={0} m={0} className='iconConocimientos'/>
+                                        <CodeIcon p={0} m={0} className='iconConocimientos'/>
 
-                                        <h2 className='titleExperiencia'>{i18n.t('Lenguajes_de')} {i18n.t('programación')}</h2>
+                                        <h2 className='titleExperiencia'>{i18n.t('desarrollo')} {i18n.t('frontend')}</h2>
                                     </CardContent>
 
                                     <CardActionArea>
@@ -111,7 +116,7 @@ export default function Experiencia() {
                             </motion.div>
                         </Grid>
 
-                        <Grid item xs={12} sm={5.5} md={3.5}>
+                        <Grid item xs={12} sm={5.5} md={2.5}>
                             <motion.div
                                 initial={{opacity:0, x:75}}
                                 whileInView={{opacity:1, x:0}}
@@ -123,19 +128,19 @@ export default function Experiencia() {
                             >
                                 <Card className='cardExperiencia' style={{marginBottom: 2 + 'em'}}>
                                     <CardContent className='cardContent'>
-                                        <FilterDramaTwoToneIcon p={0} m={0} className='iconConocimientos'/>
+                                        <TerminalIcon p={0} m={0} className='iconConocimientos'/>
 
-                                        <h2 className='titleExperiencia'>{i18n.t('Programas_de')} {i18n.t('Adobe')}</h2>
+                                        <h2 className='titleExperiencia'>{i18n.t('desarrollo2')} {i18n.t('backend')}</h2>
                                     </CardContent>
 
                                     <CardActionArea>
-                                        <Button onClick={handleOpen2} className='verMas'>{i18n.t('ver_más')}</Button>
+                                        <Button onClick={handleOpen4} className='verMas'>{i18n.t('ver_más')}</Button>
                                     </CardActionArea>
                                 </Card>
                             </motion.div>
                         </Grid>
 
-                        <Grid item xs={12} sm={5.5} md={3.5}>
+                        <Grid item xs={12} sm={5.5} md={2.5}>
                             <motion.div
                                 initial={{opacity:0, x:75}}
                                 whileInView={{opacity:1, x:0}}
@@ -147,13 +152,37 @@ export default function Experiencia() {
                             >
                                 <Card className='cardExperiencia'>
                                     <CardContent className='cardContent'>
-                                        <DonutSmallTwoToneIcon p={0} m={0} className='iconConocimientos'/>
+                                        <PlaylistAddIcon p={0} m={0} className='iconConocimientos'/>
 
-                                        <h2 className='titleExperiencia'>{i18n.t('Programas_de2')} {i18n.t('Office')}</h2>
+                                        <h2 className='titleExperiencia'>{i18n.t('Programas_de2')}<br/> {i18n.t('Office')}</h2>
                                     </CardContent>
 
                                     <CardActionArea>
                                         <Button onClick={handleOpen3} className='verMas'>{i18n.t('ver_más')}</Button>
+                                    </CardActionArea>
+                                </Card>
+                            </motion.div>
+                        </Grid>
+
+                        <Grid item xs={12} sm={5.5} md={2.5}>
+                            <motion.div
+                                initial={{opacity:0, x:75}}
+                                whileInView={{opacity:1, x:0}}
+                                viewport={{
+                                    margin:"-200px",
+                                    once:true,
+                                }}
+                                transition={{duration:0.5, delay:0.25}}
+                            >
+                                <Card className='cardExperiencia' style={{marginBottom: 2 + 'em'}}>
+                                    <CardContent className='cardContent'>
+                                        <FilterDramaIcon p={0} m={0} className='iconConocimientos'/>
+
+                                        <h2 className='titleExperiencia'>{i18n.t('Programas_de')}<br/> {i18n.t('Adobe')}</h2>
+                                    </CardContent>
+
+                                    <CardActionArea>
+                                        <Button onClick={handleOpen2} className='verMas'>{i18n.t('ver_más')}</Button>
                                     </CardActionArea>
                                 </Card>
                             </motion.div>
@@ -184,7 +213,7 @@ export default function Experiencia() {
                                     </Button>
                                 </Grid>
 
-                                <h2 className='titleModal'><span>{i18n.t('Lenguajes_de')}</span> {i18n.t('programación')}</h2>
+                                <h2 className='titleModal'><span>{i18n.t('desarrollo')}</span> {i18n.t('frontend')}</h2>
 
                                 <Grid container display="flex" flexDirection="row" justifyContent="center" columnGap={3}>
                                     <Grid textAlign="center">
@@ -210,6 +239,60 @@ export default function Experiencia() {
 
                                         <p className='textoHabilidades'>Javascript</p>
                                     </Grid>
+
+                                    <Grid textAlign="center">
+                                        <div className='imgHabilidades'>
+                                            <img src={require("./imgsExperiencia/logos/react.png")} alt="logo react" />
+                                        </div>
+
+                                        <p className='textoHabilidades'>React</p>
+                                    </Grid>
+
+                                    <Grid textAlign="center">
+                                        <div className='imgHabilidades'>
+                                            <img src={require("./imgsExperiencia/logos/bootstrap.png")} alt="logo bootstrap" />
+                                        </div>
+
+                                        <p className='textoHabilidades'>Bootstrap</p>
+                                    </Grid>
+
+                                    <Grid textAlign="center">
+                                        <div className='imgHabilidades'>
+                                            <img src={require("./imgsExperiencia/logos/material.png")} alt="logo material" />
+                                        </div>
+
+                                        <p className='textoHabilidades'>Material UI</p>
+                                    </Grid>
+                                </Grid>
+                            </Box>
+                        </Fade>
+                    </Modal>
+
+                    <Modal
+                        open={open4}
+                        onClose={handleClose4}
+                        aria-labelledby="modal-modal-title"
+                        aria-describedby="modal-modal-description"
+                        className="modales"
+                        closeAfterTransition
+                        slots={{ backdrop: Backdrop }}
+                        slotProps={{
+                            backdrop: {
+                                timeout: 500,
+                            },
+                        }}
+                    >
+                        <Fade in={open4}>
+                            <Box sx={style}>
+                                <Grid display="flex" flexDirection="row" justifyContent="end" p={0} m={0}>
+                                    <Button onClick={handleClose4} className='close' p={0} m={0} style={{maxWidth: 30 + 'px', minWidth: 30 + 'px'}}>
+                                        <CloseIcon p={0} m={0}/>
+                                    </Button>
+                                </Grid>
+
+                                <h2 className='titleModal'><span>{i18n.t('desarrollo2')}</span> {i18n.t('backend')}</h2>
+
+                                <Grid container display="flex" flexDirection="row" justifyContent="center" columnGap={3}>
 
                                     <Grid textAlign="center">
                                         <div className='imgHabilidades'>
@@ -241,30 +324,6 @@ export default function Experiencia() {
                                         </div>
                                         
                                         <p className='textoHabilidades'>MongoDB</p>
-                                    </Grid>
-
-                                    <Grid textAlign="center">
-                                        <div className='imgHabilidades'>
-                                            <img src={require("./imgsExperiencia/logos/react.png")} alt="logo react" />
-                                        </div>
-
-                                        <p className='textoHabilidades'>React</p>
-                                    </Grid>
-
-                                    <Grid textAlign="center">
-                                        <div className='imgHabilidades'>
-                                            <img src={require("./imgsExperiencia/logos/bootstrap.png")} alt="logo bootstrap" />
-                                        </div>
-
-                                        <p className='textoHabilidades'>Bootstrap</p>
-                                    </Grid>
-
-                                    <Grid textAlign="center">
-                                        <div className='imgHabilidades'>
-                                            <img src={require("./imgsExperiencia/logos/material.png")} alt="logo material" />
-                                        </div>
-
-                                        <p className='textoHabilidades'>Material UI</p>
                                     </Grid>
 
                                     <Grid textAlign="center">
