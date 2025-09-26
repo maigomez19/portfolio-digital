@@ -80,6 +80,18 @@
         border: 2px solid transparent !important;
         margin-bottom: 1em;
         box-sizing: border-box !important;
+        padding: 0px;
+    }
+
+    .nav-items ul li a {
+        display: block;
+        width: 100%;
+        border-bottom: 0px solid transparent;
+        padding: .5em 1em;
+    }
+
+    .nav-items ul li a:hover {
+        border-bottom: 0px solid transparent;
     }
 
     .nav-items.open {
@@ -167,5 +179,20 @@
 
     .nav-items .contacto-iconos-menu, .nav-items .titulo-btn-menu, .nav-items ul {
         max-width: 100%;
+    }
+
+    .nav-items ul li {
+        padding: 0px;
+    }
+
+    .nav-items ul li a {
+        display: block;
+        width: 100%;
+        border-bottom: 0px solid transparent;
+        padding: .5em 1em;
+    }
+
+    .nav-items ul li a:hover {
+        border-bottom: 0px solid transparent;
     }
 }

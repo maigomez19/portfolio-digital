@@ -118,6 +118,10 @@
     border-radius: 5px;
     text-align: center !important;
     padding: 1.5em !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center !important;
 }
 
 .cardContent {

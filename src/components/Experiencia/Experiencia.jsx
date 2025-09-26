@@ -101,8 +101,9 @@ export default function Experiencia() {
                                     once:true,
                                 }}
                                 transition={{duration:0.5, delay:0.25}}
+                                style={{ height: "100%" }}
                             >
-                                <Card className='cardExperiencia' style={{marginBottom: 2 + 'em'}}>
+                                <Card className='cardExperiencia' style={{ marginBottom: "2em", height: "70%"}}>
                                     <CardContent className='cardContent'>
                                         <CodeIcon p={0} m={0} className='iconConocimientos'/>
 
@@ -125,8 +126,9 @@ export default function Experiencia() {
                                     once:true,
                                 }}
                                 transition={{duration:0.5, delay:0.25}}
+                                style={{ height: "100%" }}
                             >
-                                <Card className='cardExperiencia' style={{marginBottom: 2 + 'em'}}>
+                                <Card className='cardExperiencia' style={{ marginBottom: "2em", height: "70%"}}>
                                     <CardContent className='cardContent'>
                                         <TerminalIcon p={0} m={0} className='iconConocimientos'/>
 
@@ -149,12 +151,13 @@ export default function Experiencia() {
                                     once:true,
                                 }}
                                 transition={{duration:0.5, delay:0.25}}
+                                style={{ height: "100%" }}
                             >
-                                <Card className='cardExperiencia'>
+                                <Card className='cardExperiencia' style={{ marginBottom: "2em", height: "70%"}}>
                                     <CardContent className='cardContent'>
                                         <PlaylistAddIcon p={0} m={0} className='iconConocimientos'/>
 
-                                        <h2 className='titleExperiencia'>{i18n.t('Programas_de2')}<br/> {i18n.t('Office')}</h2>
+                                        <h2 className='titleExperiencia'>{i18n.t('Programas_de2')} {i18n.t('Office')}</h2>
                                     </CardContent>
 
                                     <CardActionArea>
@@ -173,12 +176,13 @@ export default function Experiencia() {
                                     once:true,
                                 }}
                                 transition={{duration:0.5, delay:0.25}}
+                                style={{ height: "100%" }}
                             >
-                                <Card className='cardExperiencia' style={{marginBottom: 2 + 'em'}}>
+                                <Card className='cardExperiencia' style={{ marginBottom: "2em", height: "70%"}}>
                                     <CardContent className='cardContent'>
                                         <FilterDramaIcon p={0} m={0} className='iconConocimientos'/>
 
-                                        <h2 className='titleExperiencia'>{i18n.t('Programas_de')}<br/> {i18n.t('Adobe')}</h2>
+                                        <h2 className='titleExperiencia'>{i18n.t('Programas_de')} {i18n.t('Adobe')}</h2>
                                     </CardContent>
 
                                     <CardActionArea>
@@ -347,6 +351,99 @@ export default function Experiencia() {
                     </Modal>
 
                     <Modal
+                        open={open3}
+                        onClose={handleClose3}
+                        aria-labelledby="modal-modal-title"
+                        aria-describedby="modal-modal-description"
+                        className='modales'
+                        closeAfterTransition
+                        slots={{ backdrop: Backdrop }}
+                        slotProps={{
+                        backdrop: {
+                            timeout: 500,
+                        },
+                        }}
+                    >
+                        <Fade in={open3}>
+                            <Box sx={style}>
+                                <Grid display="flex" flexDirection="row" justifyContent="end" p={0} m={0}>
+                                    <Button onClick={handleClose3} className='close' style={{maxWidth: 30 + 'px', minWidth: 30 + 'px'}}>
+                                        <CloseIcon/>
+                                    </Button>
+                                </Grid>
+
+                                <h2 className='titleModal'><span>{i18n.t('Programas_de2')}</span> {i18n.t('Office')}</h2>
+
+                                <Grid container display="flex" flexDirection="row" justifyContent="center" columnGap={3}>
+                                    <Grid textAlign="center">
+                                        <div className='imgHabilidades'>
+                                            <img src={require("./imgsExperiencia/logos/git.png")} alt="logo git" />
+                                        </div>
+
+                                        <p className='textoHabilidades'>Git</p>
+                                    </Grid>
+
+                                    <Grid textAlign="center">
+                                        <div className='imgHabilidades'>
+                                            <img src={require("./imgsExperiencia/logos/github.png")} alt="logo github" />
+                                        </div>
+
+                                        <p className='textoHabilidades'>Github</p>
+                                    </Grid>
+
+                                    <Grid textAlign="center">
+                                        <div className='imgHabilidades'>
+                                            <img src={require("./imgsExperiencia/logos/xampp.png")} alt="logo xampp" />
+                                        </div>
+
+                                        <p className='textoHabilidades'>XAMPP</p>
+                                    </Grid>
+
+                                    <Grid textAlign="center">
+                                        <div className='imgHabilidades'>
+                                            <img src={require("./imgsExperiencia/logos/chrome.png")} alt="logo chrome" />
+                                        </div>
+
+                                        <p className='textoHabilidades'>Chrome DevTools</p>
+                                    </Grid>
+
+                                    <Grid textAlign="center">
+                                        <div className='imgHabilidades'>
+                                            <img src={require("./imgsExperiencia/logos/vercel.png")} alt="logo vercel" />
+                                        </div>
+
+                                        <p className='textoHabilidades'>Vercel</p>
+                                    </Grid>
+
+                                    <Grid textAlign="center">
+                                        <div className='imgHabilidades'>
+                                            <img src={require("./imgsExperiencia/logos/trello.png")} alt="logo trello" />
+                                        </div>
+
+                                        <p className='textoHabilidades'>Trello</p>
+                                    </Grid>
+
+                                    <Grid textAlign="center">
+                                        <div className='imgHabilidades'>
+                                            <img src={require("./imgsExperiencia/logos/xml.png")} alt="logo xml" />
+                                        </div>
+
+                                        <p className='textoHabilidades'>XML</p>
+                                    </Grid>
+
+                                    <Grid textAlign="center">
+                                        <div className='imgHabilidades'>
+                                            <img src={require("./imgsExperiencia/logos/json.png")} alt="logo json" />
+                                        </div>
+
+                                        <p className='textoHabilidades'>JSON</p>
+                                    </Grid>
+                                </Grid>
+                            </Box>
+                        </Fade>
+                    </Modal>
+
+                    <Modal
                         open={open2}
                         onClose={handleClose2}
                         aria-labelledby="modal-modal-title"
@@ -401,59 +498,6 @@ export default function Experiencia() {
                                         </div>
 
                                         <p className='textoHabilidades'>Adobe XD</p>
-                                    </Grid>
-                                </Grid>
-                            </Box>
-                        </Fade>
-                    </Modal>
-
-                    <Modal
-                        open={open3}
-                        onClose={handleClose3}
-                        aria-labelledby="modal-modal-title"
-                        aria-describedby="modal-modal-description"
-                        className='modales'
-                        closeAfterTransition
-                        slots={{ backdrop: Backdrop }}
-                        slotProps={{
-                        backdrop: {
-                            timeout: 500,
-                        },
-                        }}
-                    >
-                        <Fade in={open3}>
-                            <Box sx={style}>
-                                <Grid display="flex" flexDirection="row" justifyContent="end" p={0} m={0}>
-                                    <Button onClick={handleClose3} className='close' style={{maxWidth: 30 + 'px', minWidth: 30 + 'px'}}>
-                                        <CloseIcon/>
-                                    </Button>
-                                </Grid>
-
-                                <h2 className='titleModal'><span>{i18n.t('Programas_de2')}</span> {i18n.t('Office')}</h2>
-
-                                <Grid container display="flex" flexDirection="row" justifyContent="center" columnGap={3}>
-                                    <Grid textAlign="center">
-                                        <div className='imgHabilidades'>
-                                            <img src={require("./imgsExperiencia/logos/word.png")} alt="logo word" />
-                                        </div>
-
-                                        <p className='textoHabilidades'>Word</p>
-                                    </Grid>
-
-                                    <Grid textAlign="center">
-                                        <div className='imgHabilidades'>
-                                            <img src={require("./imgsExperiencia/logos/excel.png")} alt="logo excel" />
-                                        </div>
-
-                                        <p className='textoHabilidades'>Excel</p>
-                                    </Grid>
-
-                                    <Grid textAlign="center">
-                                        <div className='imgHabilidades'>
-                                            <img src={require("./imgsExperiencia/logos/powerpoint.png")} alt="logo powerpoint" />
-                                        </div>
-
-                                        <p className='textoHabilidades'>PowerPoint</p>
                                     </Grid>
                                 </Grid>
                             </Box>
