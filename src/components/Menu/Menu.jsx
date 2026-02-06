@@ -55,9 +55,9 @@ const Menu = () => {
                     <Stack display="flex" flexDirection="row" alignitems="center">
                         <a className="icono-menu" href="mailto:maichu19.mg@gmail.com"><EmailIcon className="icono-portada"/></a>
 
-                        <a className="icono-menu" href="https://www.linkedin.com/in/mailen-gomez19/" target="_blank"><LinkedInIcon className="icono-portada"/></a>
+                        <a className="icono-menu" href="https://www.linkedin.com/in/mailen-gomez19/" target="_blank" rel="noopener noreferrer"><LinkedInIcon className="icono-portada"/></a>
 
-                        <a className="icono-menu" href="https://github.com/maigomez19" target="_blank"><GitHubIcon className="icono-portada"/></a>
+                        <a className="icono-menu" href="https://github.com/maigomez19" target="_blank" rel="noopener noreferrer"><GitHubIcon className="icono-portada"/></a>
                     </Stack>
                 </Grid>
             </div>
