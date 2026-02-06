@@ -63,6 +63,10 @@
     background: rgba(171, 52, 103) !important;
 }
 
+.verMas-git.ultimo {
+    margin-bottom: 1em !important;
+}
+
 .verMas-git:hover {
     background: rgb(194, 60, 118) !important;
 }

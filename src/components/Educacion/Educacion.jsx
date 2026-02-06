@@ -41,7 +41,25 @@ export default function Educacion() {
                 </Grid>
 
                 <Grid container display="flex" flexDirection={{ xs: 'column', md: 'row' }} alignContent="center" justifyContent="center" flexWrap="wrap" pb={{xs: 5, sm: 5, md: 0}} textAlign='center'>
-                    <Grid item xs={12} sm={12} md={6} marginBottom={4}>
+                    <Grid item xs={12} sm={12} md={4} marginBottom={4}>
+                        <motion.div
+                            initial={{opacity:0, x:75}}
+                            whileInView={{opacity:1, x:0}}
+                            viewport={{
+                                margin:"-200px",
+                                once:true,
+                            }}
+                            transition={{duration:0.5, delay:0.25}}
+                        >
+                            <p className="fechas">{i18n.t('Octubre')} 2025 - {i18n.t('Noviembre')} 2025</p>
+
+                            <h2>EducacionIT</h2>
+
+                            <p>{i18n.t('Curso_MYSQL')}</p>
+                        </motion.div>
+                    </Grid>
+
+                    <Grid item xs={12} sm={12} md={4} marginBottom={4}>
                         <motion.div
                             initial={{opacity:0, x:75}}
                             whileInView={{opacity:1, x:0}}
@@ -59,7 +77,7 @@ export default function Educacion() {
                         </motion.div>
                     </Grid>
                     
-                    <Grid item xs={12} sm={12} md={6} marginBottom={4}>
+                    <Grid item xs={12} sm={12} md={4} marginBottom={4}>
                         <motion.div
                             initial={{opacity:0, x:75}}
                             whileInView={{opacity:1, x:0}}
@@ -77,7 +95,7 @@ export default function Educacion() {
                         </motion.div>
                     </Grid>
 
-                    <Grid item  xs={12} sm={12} md={6} marginBottom={4}>
+                    <Grid item  xs={12} sm={12} md={4} marginBottom={4}>
                         <motion.div
                             initial={{opacity:0, x:75}}
                             whileInView={{opacity:1, x:0}}
@@ -95,7 +113,7 @@ export default function Educacion() {
                         </motion.div>
                     </Grid>
 
-                    <Grid item xs={12} sm={12} md={6}>
+                    <Grid item xs={12} sm={12} md={4}>
                         <motion.div
                             initial={{opacity:0, x:75}}
                             whileInView={{opacity:1, x:0}}

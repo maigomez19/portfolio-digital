@@ -73,4 +73,10 @@ export const esp = {
     pro: 'Proyectos',
     Menu: 'Menú',
     ver_codigo: 'ver código',
+    Octubre: 'Octubre',
+    Noviembre: 'Noviembre',
+    Curso_MYSQL: 'Curso introductorio a Bases de Datos y SQL.',
+    proyecto_disponible_local: 'Proyecto final de tesis. Aplicación disponible únicamente en entorno local',
+    ver_ux: 'Proceso UX',
+    snapent_detalle: 'Organizá turnos médicos de manera rápida y accesible para pacientes y profesionales'
 }

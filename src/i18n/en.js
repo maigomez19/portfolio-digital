@@ -71,4 +71,10 @@ export const eng = {
     pro: 'Projects',
     Menu: 'Menu',
     ver_codigo: 'view code',
+    Octubre: 'October',
+    Noviembre: 'November',
+    Curso_MYSQL: 'Introductory Databases and SQL Course.',
+    proyecto_disponible_local: 'Final thesis project. Available only in a local environment',
+    ver_ux: 'UX Process',
+    snapent_detalle: 'Organize medical appointments quickly for patients and healthcare professionals'
 }
